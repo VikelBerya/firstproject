@@ -1,55 +1,122 @@
 body {
-    padding: 0 30px;
-    font-size: 25px;
-    line-height: normal;
-    font-family: "Georgia", serif;
-    color: rgb(255, 209, 209);
-    background-color: rgb(0, 0, 0);
+    padding: 0 30px; /*внутренние отступы верхниз левоправо*/
+    font-size: 25px; /*размер текста*/
+    line-height: normal; /*высота строки\межстрочный интервал*/
+    font-family: 'Montserrat', sans-serif; /*изменение шрифта*/
+    color: rgb(0, 0, 0); /*изменение цвета текста*/
+    background-color: rgb(255, 255, 255); /*цвет фона*/
 }
-.menu{
+
+.menu {
     list-style-type: none;
-    display: flex;
+    font-size: 35px;
 }
+
+.menu, nav, .form {
+    width: auto;
+    display: flex;
+    flex-direction: row; /*расположение слева направо*/
+    justify-content: space-around;
+    align-items: center;
+}
+
 nav {
-    margin-bottom: 30px;
+    margin-bottom: 30px; /*внешний нижний отступ*/
     padding: 20px;
-    border:5px solid rgba(255, 255, 255, 0.56);
+    border: 5px solid rgba(255, 255, 255, 0.56); /*рамка*/
     background-image: url("https://i.pinimg.com/564x/95/22/2d/95222d98f9c1300c11be917988f4d182.jpg");
     background-color: rgba(255, 255, 255, 0.56);
 
     color: #000000;
 }
+
 .menu a,
-.vk{
+.vk {
     text-decoration: none;
     color: #000000;
-    margin: 20px;
+    margin: 20px; /*внешний отступ со всех сторон*/
     font-size: 30px;
 }
-.menu a:hover, .vk:hover {
+
+.menu a:hover, .vk:hover { /*active button*/
     text-decoration: none;
     color: rgba(0, 0, 0, 0.42);
     margin: 20px;
     font-size: 30px;
     border-bottom: 1px dashed;
 }
+
 img {
-    border-radius: 40px;
+    border-radius: 40px; /*скругление иконки*/
 }
-button{
+
+#user-password, #user-login {
+    font-size: 18px;
+}
+
+#remember {
+    transform: scale(1.5); /*величина чекбокса*/
+    margin-right: 5px;
 
 }
-footer{
+
+.h1 {
+    text-align: center;
+    font-size: 40px; /*размер текста*/
+    color: #ff86f3;
+
+}
+
+.news {
+    display: block;
+    width: auto;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+.section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.article {
+}
+.h2{
+    text-align: center;
+    color: #ff86f3;
+    font-size: 40px; /*размер текста*/
+}
+
+h3 {
+    align-items: baseline;
+}
+
+.column {
+    display: flex;
+    flex-direction: column; /*расположение сверху вниз*/
+    width: 500px;
+    text-align: center;
+}
+
+.time {
+    text-align: right; /*расположение справа*/
+    margin-right: 20px;
+    color: rgba(0, 0, 0, 0.55);
+
+}
+
+footer {
     margin-bottom: 20px;
     padding: 20px;
-    border:5px solid rgba(255, 255, 255, 0.56);
+    border: 5px solid rgba(255, 255, 255, 0.56);
     background-image: url("https://i.pinimg.com/564x/95/22/2d/95222d98f9c1300c11be917988f4d182.jpg");
     background-color: rgba(255, 255, 255, 0.56);
 
     color: #000000;
 }
-#creator{
-    text-align: right;
+
+#creator {
+    text-align: right; /*расположение справа*/
     color: rgba(0, 0, 0, 0.55);
 }
 
