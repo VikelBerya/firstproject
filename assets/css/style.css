@@ -7,6 +7,10 @@ body {
     background-color: rgb(255, 255, 255); /*цвет фона*/
 }
 
+p {
+    margin: 0;
+}
+
 .menu {
     list-style-type: none;
     font-size: 35px;
@@ -57,7 +61,6 @@ img {
 #remember {
     transform: scale(1.5); /*величина чекбокса*/
     margin-right: 5px;
-
 }
 
 .h1 {
@@ -79,9 +82,7 @@ img {
     justify-content: space-around;
 }
 
-.article {
-}
-.h2{
+.h2 {
     text-align: center;
     color: #ff86f3;
     font-size: 40px; /*размер текста*/
@@ -120,3 +121,29 @@ footer {
     color: rgba(0, 0, 0, 0.55);
 }
 
+.input {
+    margin-top: 8px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 8px;
+}
+
+.user {
+    grid-column: 1;
+}
+
+.user-input {
+    grid-column: 2;
+}
+
+.remember {
+    grid-row: 3;
+    grid-column: 2;
+}
+
+.log-in {
+    grid-row: 3;
+    grid-column: 1;
+    font-size: 22px;
+}

@@ -22,19 +22,18 @@
             <div>
                 <h2>Личный кабинет</h2>
                 <p>Введите свой логин и пароль</p>
-                <p>
+
                 <div class="input">
-                    <label for="user-login"><em>Логин</em></label>
-                    <input id="user-login" name="login" placeholder="email@email.com" type="email">
-                    </p>
-                    <p>
-                        <label for="user-password"><em>Пароль</em></label>
-                        <input id="user-password" name="password" placeholder="********" type="password">
-                    </p>
+                    <label class="user" for="user-login"><em>Логин</em></label>
+                    <input class="user-input" id="user-login" name="login" placeholder="email@email.com" type="email">
+                    <label class="user" for="user-password"><em>Пароль</em></label>
+                    <input class="user-input" id="user-password" name="password" placeholder="********" type="password">
+                    <button class="log-in">Войти</button>
+                    <div class="remember">
+                        <input id="remember" name="remember" type="checkbox">
+                        <label for="remember">Запомнить меня!</label>
+                    </div>
                 </div>
-                <input id="remember" name="remember" type="checkbox">
-                <label for="remember">Запомнить меня!</label>
-                <button>Войти</button>
             </div>
         </form>
     </nav>
@@ -75,10 +74,11 @@
             </p>
             <p>
                 Приглашенный лектор - Александр Поталов (ФизМех, 3 курс).
+            </p>
             <p class="time">
                 <time datetime="2021.10.17">17 октября 2021 года</time>
             </p>
-            </p>
+
         </article>
         <article class="article">
             <p>
