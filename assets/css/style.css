@@ -66,7 +66,7 @@ img {
 .h1 {
     text-align: center;
     font-size: 40px; /*размер текста*/
-    color: #ff86f3;
+    color: #ff84ce;
 
 }
 
@@ -75,6 +75,7 @@ img {
     width: auto;
     margin-top: 60px;
     margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 .section {
@@ -129,14 +130,19 @@ footer {
     grid-gap: 8px;
 }
 
-.user {
+.user-login {
     grid-column: 1;
+    grid-row: 1;
 }
 
 .user-input {
     grid-column: 2;
+    grid-row: 1;
 }
-
+.user-password{
+    grid-column: 1;
+    grid-row: 2;
+}
 .remember {
     grid-row: 3;
     grid-column: 2;
